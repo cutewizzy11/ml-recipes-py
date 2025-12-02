@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/ml_recipes/__init__.py
+src/ml_recipes/models/__init__.py
+src/ml_recipes/models/linear_regression_scratch.py
+src/ml_recipes_py.egg-info/PKG-INFO
+src/ml_recipes_py.egg-info/SOURCES.txt
+src/ml_recipes_py.egg-info/dependency_links.txt
+src/ml_recipes_py.egg-info/requires.txt
+src/ml_recipes_py.egg-info/top_level.txt
+tests/test_linear_regression_scratch.py

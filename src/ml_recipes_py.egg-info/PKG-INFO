@@ -1,0 +1,95 @@
+Metadata-Version: 2.4
+Name: ml-recipes-py
+Version: 0.1.0
+Summary: Curated, well-documented machine learning recipes and examples in Python.
+Author: cutewizzy11
+License: MIT
+Project-URL: Homepage, https://github.com/cutewizzy11/ml-recipes-py
+Project-URL: Issues, https://github.com/cutewizzy11/ml-recipes-py/issues
+Keywords: machine-learning,ml,education,examples,python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.26.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: matplotlib>=3.8.0
+Requires-Dist: scikit-learn>=1.4.0
+Requires-Dist: jupyter>=1.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: black>=24.0.0; extra == "dev"
+Requires-Dist: ruff>=0.5.0; extra == "dev"
+Dynamic: license-file
+
+# ml-recipes-py
+
+Curated, well-documented **machine learning recipes** in Python.
+
+Each recipe is a small, focused example (script or notebook) that shows one idea clearly, with simple, readable code.
+
+## Goals
+
+- Make ML examples **approachable** for beginners and useful for intermediates.
+- Prefer **small, self-contained recipes** over big frameworks.
+- Encourage contributions: new recipes, better docs, small utilities.
+
+## Getting started
+
+```bash
+git clone https://github.com/cutewizzy11/ml-recipes-py.git
+cd ml-recipes-py
+
+python -m venv .venv
+# Linux/macOS
+source .venv/bin/activate
+# Windows PowerShell
+# .venv\\Scripts\\Activate.ps1
+
+pip install .
+# Or, for development
+pip install .[dev]
+```
+
+Run tests:
+
+```bash
+pytest
+```
+
+## Project structure
+
+```text
+src/ml_recipes/
+  datasets/
+  models/
+  training/
+examples/notebooks/
+docs/
+tests/
+```
+
+## Example recipes (initial)
+
+- Linear regression with scikit-learn
+- Iris classification with scikit-learn
+- Linear regression from scratch (NumPy)
+
+See `examples/notebooks/` for Jupyter notebooks.
+
+## Contributing
+
+- Read [`CONTRIBUTING.md`](CONTRIBUTING.md).
+- Check issues labeled `good first issue` and `help wanted`.
+- Popular ways to contribute:
+  - New notebooks covering classic ML tasks
+  - Improving explanations and plots
+  - Adding small utility functions in `src/ml_recipes/`
+
+## Code of Conduct
+
+See [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
